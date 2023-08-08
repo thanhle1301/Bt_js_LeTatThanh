@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- BAI 1 -->
+    <div class="bai1 p-4">
+      <p>
+        Bài 1: Tính tiền lương nhân viên <br />
+        lương 1 ngày; 100.000 VND <br />
+        cho người dùng nhập vào số ngày làm.
+      </p>
+      <input
+        type="number"
+        id="giaTriNhap"
+        class="form-control w-25"
+        placeholder="Nhập số ngày bạn đã làm trong tháng này ?"
+      />
+      <br />
+      <button
+        onclick="hienThiThongTin()"
+        id="btnHienThi"
+        class="btn btn-success"
+      >
+        Tính
+      </button>
+      <br />
+      <div class="btn mt-2">Kết Quả: <span id="ketQuaHienThi"> </span></div>
+    </div>
+
+    <!-- BAI 2 -->
+    <div class="bai2 p-4">
+      <p>
+        Bài 2: Tính giá trị trung bình <br />
+        Viết chương trình nhập 5 số thực. <br />
+        Tính giá trị trung bình của 5 số này và xuất ra màn hình
+      </p>
+      <input type="float" id="giaTriNhap1" placeholder="  Nhập số thực 1" />
+      <input type="float" id="giaTriNhap2" placeholder="  Nhập số thực 2" />
+      <input type="float" id="giaTriNhap3" placeholder="  Nhập số thực 3" />
+      <input type="float" id="giaTriNhap4" placeholder="  Nhập số thực 4" />
+      <input type="float" id="giaTriNhap5" placeholder="  Nhập số thực 5" />
+      <br />
+      <button onclick="hienThiThongTin2()" class="btn btn-success mt-3">
+        Tính</button
+      ><br />
+      <div class="btn mt-2">Kết Quả: <span id="ketQuaHienThi2"> </span></div>
+    </div>
+
+    <!-- BAI 3 -->
+    <div class="bai3 p-4">
+      <p>
+        Bài 3: Quy đổi tiền <br />
+        Gía USD hiện nay đang là 23.500 VND <br />
+        Cho người dùng nhập vào số tiền USD. Tính và xuất ra số tiền sau quy đổi
+        VND?
+      </p>
+      <input type="number" id="tienUsd" placeholder="  Nhập số tiền USD" />
+      <br />
+      <button onclick="hienThiThongTin3()" class="btn btn-success mt-3">
+        Tính</button
+      ><br />
+      <div class="btn mt-2">Kết Quả: <span id="ketQuaHienThi3"> </span></div>
+    </div>
+
+    <!-- BAI 4 -->
+    <div class="bai4 p-4">
+      <p>
+        Bài 4: Tính diện tích, chu vi hình chữ nhật <br />
+        Viết chương trình nhập vào 2 chiều dài và chiều rộng của HCN (hình chữ
+        nhật). Tính và xuất ra diện tích, chu vi cuả HCN đó?
+      </p>
+      <input type="number" id="chieuDai" placeholder="  Nhập chiều dài " />
+      <input type="number" id="chieuRong" placeholder="  Nhập chiều rộng " />
+      <br />
+      <button onclick="hienThiThongTin4()" class="btn btn-success mt-3">
+        Tính
+      </button>
+      <br />
+      <div class="btn">Kết quả chu vi: <span id="ketQuaHienThi4"></span></div>
+      <br />
+      <div class="btn">
+        Kết quả diện tích: <span id="ketQuaHienThi5"></span>
+      </div>
+    </div>
+
+    <!-- BAI 5 -->
+    <div class="bai5 p-4">
+      <p>
+        Bài 5: Tính tổng 2 ký số <br />
+        Viết chương trình nhập vào 1 số có 2 chữ số (VD: 12, 44, 83) <br />
+        Tính tổng 2 ký số vừa nhập?
+      </p>
+      <input
+        type="number"
+        id="giaTriNhap6"
+        placeholder=" Nhập chữ số có 2 chữ số"
+        class="w-25"
+        maxnumber="2"
+      />
+      <br />
+      <button onclick="hienThiThongTin5()" class="btn btn-success mt-3">
+        Tính
+      </button>
+      <br />
+      <div class="btn">Kết quả: <span id="ketQuaHienThi6"></span></div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- index.js  -->
+    <script src="./index.js"></script>
+  </body>
+</html>
