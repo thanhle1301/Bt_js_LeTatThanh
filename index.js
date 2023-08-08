@@ -52,7 +52,7 @@ function hienThiThongTin4() {
   var input8 = document.getElementById('chieuRong');
 
   //process
-  var tinhChuVi = (chieuDai.value + chieuRong.value) * 2;
+  var tinhChuVi = (+chieuDai.value + +chieuRong.value) * 2;
   var tinhDienTich = chieuDai.value * chieuRong.value;
 
   //output
