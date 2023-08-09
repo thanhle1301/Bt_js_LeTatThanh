@@ -16,34 +16,60 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./index.css">
   </head>
   <body>
-    <!-- BAI 1 -->
-    <div class="bai1 p-4">
+    
+    <div class="container mt-5">
       <p>
-        Bài 1: Tính tiền lương nhân viên <br />
-        lương 1 ngày;  <br />
-        cho người dùng nhập vào số lương 1 ngày và số ngày làm?
+        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Bài 1
+        </a>
+        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Bài 2
+        </a>
+        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Bài 3
+        </a>
+        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Bài 4
+        </a>
+        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Bài 5
+        </a>
       </p>
-      <input type="number" id="giaTriNhap0" placeholder=" Nhập lương một ngày" />
-      <input
-        type="number"
-        id="giaTriNhap"
-        placeholder=" Nhập số ngày"
-      />
-      <br />
-      <button
-        onclick="hienThiThongTin()"
-        id="btnHienThi"
-        class="btn btn-success mt-3"
-      >
-        Tính lương
-      </button>
-      <br />
-      <div class="btn mt-2">Kết quả: <span id="ketQuaHienThi"> </span></div>
-    </div>
-
-    <!-- BAI 2 -->
+      <div class="collapse" id="collapseExample1">
+        <div class="card card-body">
+          <!-- BAI 1 -->
+          <div class="bai1 p-4">
+            <p>
+              Bài 1: Tính tiền lương nhân viên <br />
+              lương 1 ngày;  <br />
+              cho người dùng nhập vào số lương 1 ngày và số ngày làm?
+            </p>
+            <input type="number" id="giaTriNhap0" placeholder=" Nhập lương một ngày" />
+            <input
+              type="number"
+              id="giaTriNhap"
+              placeholder=" Nhập số ngày"
+            />
+            <br />
+            <button
+              onclick="hienThiThongTin()"
+              id="btnHienThi"
+              class="btn btn-success mt-3"
+            >
+              Tính lương
+            </button>
+            <br />
+            <div class="btn mt-2">Kết quả: <span id="ketQuaHienThi"> </span></div>
+          </div>
+        </div>
+      </div>
+      <div class="collapse" id="collapseExample2">
+        <div class="card card-body">
+          <!-- BAI 2 -->
     <div class="bai2 p-4">
       <p>
         Bài 2: Tính giá trị trung bình <br />
@@ -61,8 +87,11 @@
       ><br />
       <div class="btn mt-2">Kết quả: <span id="ketQuaHienThi2"> </span></div>
     </div>
-
-    <!-- BAI 3 -->
+        </div>
+      </div>
+      <div class="collapse" id="collapseExample3">
+        <div class="card card-body">
+          <!-- BAI 3 -->
     <div class="bai3 p-4">
       <p>
         Bài 3: Quy đổi tiền <br />
@@ -77,8 +106,11 @@
       ><br />
       <div class="btn mt-2">Kết quả: <span id="ketQuaHienThi3"> </span></div>
     </div>
-
-    <!-- BAI 4 -->
+        </div>
+      </div>
+      <div class="collapse" id="collapseExample4">
+        <div class="card card-body">
+          <!-- BAI 4 -->
     <div class="bai4 p-4">
       <p>
         Bài 4: Tính diện tích, chu vi hình chữ nhật <br />
@@ -98,8 +130,11 @@
         Kết quả diện tích: <span id="ketQuaHienThi5"></span>
       </div>
     </div>
-
-    <!-- BAI 5 -->
+        </div>
+      </div>
+      <div class="collapse" id="collapseExample5">
+        <div class="card card-body">
+          <!-- BAI 5 -->
     <div class="bai5 p-4">
       <p>
         Bài 5: Tính tổng 2 ký số <br />
@@ -120,6 +155,10 @@
       <br />
       <div class="btn">Kết quả: <span id="ketQuaHienThi6"></span></div>
     </div>
+        </div>
+      </div>
+    </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
