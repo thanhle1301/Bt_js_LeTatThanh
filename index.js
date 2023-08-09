@@ -2,11 +2,11 @@
 function hienThiThongTin() {
   //input
   var input = document.getElementById("giaTriNhap");
-
+  var input0 = document.getElementById("giaTriNhap0");
   //process
   var output = '';
-  var ngayLuong = 100000;
-  var tongLuong = input.value * ngayLuong;
+  var ngayLuong = input0;
+  var tongLuong = input.value * ngayLuong.value;
   output = tongLuong;
 
   //output
